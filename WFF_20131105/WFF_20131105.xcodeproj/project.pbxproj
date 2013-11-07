@@ -21,6 +21,8 @@
 		07A045ED18293F7700478A45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A045CF18293F7700478A45 /* UIKit.framework */; };
 		07A045F518293F7700478A45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07A045F318293F7700478A45 /* InfoPlist.strings */; };
 		07A045F718293F7700478A45 /* WFF_20131105Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A045F618293F7700478A45 /* WFF_20131105Tests.m */; };
+		07E9947D182A7430008B450C /* Content in Resources */ = {isa = PBXBuildFile; fileRef = 07E9947C182A7430008B450C /* Content */; };
+		07E9947E182A7430008B450C /* Content in Resources */ = {isa = PBXBuildFile; fileRef = 07E9947C182A7430008B450C /* Content */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		07A045F218293F7700478A45 /* WFF_20131105Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WFF_20131105Tests-Info.plist"; sourceTree = "<group>"; };
 		07A045F418293F7700478A45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07A045F618293F7700478A45 /* WFF_20131105Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFF_20131105Tests.m; sourceTree = "<group>"; };
+		07E9947C182A7430008B450C /* Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Content; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		07A045D118293F7700478A45 /* WFF_20131105 */ = {
 			isa = PBXGroup;
 			children = (
+				07E9947C182A7430008B450C /* Content */,
 				07A045DA18293F7700478A45 /* AppDelegate.h */,
 				07A045DB18293F7700478A45 /* AppDelegate.m */,
 				07A045DD18293F7700478A45 /* Main.storyboard */,
@@ -230,6 +234,7 @@
 			files = (
 				07A045E418293F7700478A45 /* Images.xcassets in Resources */,
 				07A045D618293F7700478A45 /* InfoPlist.strings in Resources */,
+				07E9947D182A7430008B450C /* Content in Resources */,
 				07A045DF18293F7700478A45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E9947E182A7430008B450C /* Content in Resources */,
 				07A045F518293F7700478A45 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +468,7 @@
 				07A045FC18293F7700478A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07A045FD18293F7700478A45 /* Build configuration list for PBXNativeTarget "WFF_20131105Tests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +477,7 @@
 				07A045FF18293F7700478A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

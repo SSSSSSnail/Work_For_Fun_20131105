@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UIWebView *indexWebView;
 @end
 
 @implementation ViewController
@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.indexWebView.scrollView.bounces = NO;
+    self.indexWebView.allowsInlineMediaPlayback = YES;
+    self.indexWebView.mediaPlaybackRequiresUserAction = NO;
+    [self.indexWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/index.html",[[NSBundle mainBundle] pathForResource:@"Content" ofType:@""]]]]];
 }
 
 - (void)didReceiveMemoryWarning
