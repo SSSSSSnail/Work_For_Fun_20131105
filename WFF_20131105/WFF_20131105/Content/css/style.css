@@ -1,4 +1,8 @@
 /* index page */
+div {
+    -webkit-user-select:none;
+}
+
 .index_bg {
     width: 1024px;
     height: 768px;
@@ -67,11 +71,117 @@
     height: 306px;
 }
 
+/* doctor_detail page */
+
+.doctor_detail_1 {
+    width: 1024px;
+    height: 768px;
+    background-image: url(../images/doctor_detail_1.png);
+}
+
+.doctor_detail_2 {
+    width: 1024px;
+    height: 768px;
+    background-image: url(../images/doctor_detail_2.png);
+}
+
+.doctor_detail_3 {
+    width: 1024px;
+    height: 768px;
+    background-image: url(../images/doctor_detail_3.png);
+}
+
 /* navigate page */
 .navigate_bg {
     width: 1024px;
     height: 768px;
     background-image: url(../images/navigate_bg.png);
+}
+
+.navigate_title {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1024px;
+    height: 118px;
+    background-image: url(../images/navigate_title.png);
+}
+
+.navigate_bg2 {
+    position: absolute;
+    left: 0px;
+    top: -439px;
+    width: 1024px;
+    height: 557px;
+    background-image: url(../images/navigate_bg2.png);
+    display: none;
+}
+
+.main_board {
+    position: absolute;
+    left: 6px;
+    top: -182px;
+    width: 1012px;
+    height: 305px;
+    background-image: url(../images/main_board.png);
+    display: none;
+}
+
+.board_left_wb {
+    position: absolute;
+    left: 8px;
+    top: -172px;
+    width: 433px;
+    height: 287px;
+    background-image: url(../images/board_left_wb_4.png);
+    display: none;
+}
+
+.board_left_color {
+    position: absolute;
+    left: 8px;
+    top: 133px;
+    width: 433px;
+    height: 287px;
+    background-image: url(../images/board_left_color_4.png);
+    opacity: 0;
+}
+
+.board_right {
+    position: absolute;
+    left: 502px;
+    top: 133px;
+    width: 510px;
+    height: 287px;
+    background-image: url(../images/board_right.png);
+    opacity: 0;
+}
+
+.icon_left {
+    position: absolute;
+    left: 374px;
+    top: 375px;
+    width: 114px;
+    height: 114px;
+    background-image: url(../images/icon1.png);
+}
+
+.icon_right {
+    position: absolute;
+    left: 553px;
+    top: 375px;
+    width: 114px;
+    height: 114px;
+    background-image: url(../images/icon3.png);
+}
+
+.icon_middle {
+    position: absolute;
+    left: 460px;
+    top: 474px;
+    width: 114px;
+    height: 114px;
+    background-image: url(../images/icon2.png);
 }
 
 /* video page */
