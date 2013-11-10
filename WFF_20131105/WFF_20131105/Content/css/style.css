@@ -98,6 +98,14 @@ div {
     background-image: url(../images/navigate_bg.png);
 }
 
+.homepage_button {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 118px;
+    height: 118px;
+}
+
 .navigate_title {
     position: absolute;
     left: 0px;
@@ -133,7 +141,6 @@ div {
     top: -172px;
     width: 433px;
     height: 287px;
-    background-image: url(../images/board_left_wb_4.png);
     display: none;
 }
 
@@ -143,7 +150,6 @@ div {
     top: 133px;
     width: 433px;
     height: 287px;
-    background-image: url(../images/board_left_color_4.png);
     opacity: 0;
 }
 
@@ -153,7 +159,6 @@ div {
     top: 133px;
     width: 510px;
     height: 287px;
-    background-image: url(../images/board_right.png);
     opacity: 0;
 }
 
@@ -163,7 +168,7 @@ div {
     top: 375px;
     width: 114px;
     height: 114px;
-    background-image: url(../images/icon1.png);
+    opacity: 0;
 }
 
 .icon_right {
@@ -172,7 +177,7 @@ div {
     top: 375px;
     width: 114px;
     height: 114px;
-    background-image: url(../images/icon3.png);
+    opacity: 0;
 }
 
 .icon_middle {
@@ -181,16 +186,163 @@ div {
     top: 474px;
     width: 114px;
     height: 114px;
-    background-image: url(../images/icon2.png);
+    opacity: 0;
+}
+
+.bottom_text {
+    position: absolute;
+    top: 708px;
+    width: 578px;
+    height: 24px;
+    opacity: 0;
+}
+
+.bottom_text_1 {
+    float: left;
+    width: 171px;
+    height: 24px;
+}
+
+.bottom_text_2 {
+    float: left;
+    width: 163px;
+    height: 24px;
+}
+
+.bottom_text_3 {
+    float: left;
+    width: 150px;
+    height: 24px;
+}
+
+.bottom_text_4 {
+    float: left;
+    width: 94px;
+    height: 24px;
 }
 
 /* video page */
 
-.videoloop1 {
-    position: absolute;
-    left: 453px;
-    top: 633px;
-    width: 456px;
-    height: 75px;
-    background-color: #222222;
+.video_bg {
+    width: 1024px;
+    height: 768px;
+    background-image: url(../images/video_bg.png);
 }
+
+.video_title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1024px;
+    height: 59px;
+}
+
+//.videoloop1 {
+//    position: absolute;
+//    left: 453px;
+//    top: 633px;
+//    width: 456px;
+//    height: 75px;
+//    background-color: #222222;
+//}
+
+/* qa page */
+
+.qa_title {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1024px;
+    height: 100px;
+    background-image: url(../images/qa_title.png);
+}
+
+.qa_main {
+    position: absolute;
+    top: 190px;
+    left: 0px;
+    width: 1024px;
+    height: 472px;
+    background-image: url(../images/qa_main.png);
+}
+
+.q_1 {
+    float: left;
+    width: 243px;
+    height: 157px;
+}
+
+.q_2 {
+    float: left;
+    width: 264px;
+    height: 157px;
+}
+
+.q_3 {
+    float: left;
+    width: 253px;
+    height: 157px;
+}
+
+.q_4 {
+    float: left;
+    width: 264px;
+    height: 157px;
+}
+
+.q_5 {
+    float:left;
+    width: 243px;
+    height: 158px;
+}
+
+.q_6 {
+    float: left;
+    width: 264px;
+    height: 158px;
+}
+
+.q_7 {
+    float: left;
+    width: 253px;
+    height: 158px;
+}
+
+.q_8 {
+    float: left;
+    width: 264px;
+    height: 158px;
+}
+
+.q_9 {
+    float:left;
+    width: 243px;
+    height: 156px;
+}
+
+.q_10 {
+    float: left;
+    width: 264px;
+    height: 156px;
+}
+
+.q_11 {
+    float: left;
+    width: 253px;
+    height: 156px;
+}
+
+.q_12 {
+    float: left;
+    width: 264px;
+    height: 156px;
+}
+
+.answer {
+    position: absolute;
+    width: 518px;
+    height: 317px;
+    display: none;
+}
+
+
