@@ -237,14 +237,96 @@ div {
     height: 59px;
 }
 
-//.videoloop1 {
-//    position: absolute;
-//    left: 453px;
-//    top: 633px;
-//    width: 456px;
-//    height: 75px;
-//    background-color: #222222;
-//}
+.mainvideo {
+    position: absolute;
+    top: 97px;
+    left: 85px;
+    width: 835px;
+    height: 334px;
+}
+
+.video_bar {
+    position: absolute;
+    top: 430px;
+    left: 85px;
+    width: 835px;
+    height: 53px;
+    background-image: url(../images/video_bar.png);
+}
+
+.bar_3_section {
+    position: absolute;
+    top: 440px;
+    left: 196px;
+    width: 607px;
+    height: 33px;
+    background-image: url(../images/bar_3_section.png);
+    display: none;
+}
+
+.bar_3_1_selected {
+    position: absolute;
+    top: 447px;
+    left: 206px;
+    width: 193px;
+    height: 20px;
+    display: none;
+}
+
+.bar_3_2_selected {
+    position: absolute;
+    top: 447px;
+    left: 402px;
+    width: 195px;
+    height: 20px;
+    display: none;
+}
+
+.bar_3_3_selected {
+    position: absolute;
+    top: 447px;
+    left: 600px;
+    width: 193px;
+    height: 20px;
+    display: none;
+}
+
+.bar_2_section {
+    position: absolute;
+    top: 440px;
+    left: 196px;
+    width: 607px;
+    height: 33px;
+    background-image: url(../images/bar_2_section.png);
+    display: none;
+}
+
+.bar_2_1_selected {
+    position: absolute;
+    top: 447px;
+    left: 205px;
+    width: 289px;
+    height: 20px;
+    display: none;
+}
+
+.bar_2_2_selected {
+    position: absolute;
+    top: 447px;
+    left: 499px;
+    width: 292px;
+    height: 20px;
+    display: none;
+}
+
+.ppt {
+    position: absolute;
+    top: 517px;
+    left: 0px;
+    width: 1024px;
+    height: 251px;
+    background-image: url(../images/ppt_1_1.png);
+}
 
 /* qa page */
 

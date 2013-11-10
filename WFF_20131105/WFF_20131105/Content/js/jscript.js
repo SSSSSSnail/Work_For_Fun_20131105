@@ -5,6 +5,8 @@ var doctor_detail_index;
 
 var navigate_index;
 
+var mainVideoTimeListener;
+
 $("div#index").live('pageinit',function(event, ui){
                     $(".clickDiv1").unbind('click').click(function(){
                                                           navigate_index = 1;
@@ -245,20 +247,134 @@ $("div#video").live('pageinit',function(event, ui){
                     $(".homepage_button").unbind('click').click(function(){
                                                                 $.mobile.changePage("navigate.html", {transition: "flow", reverse:true});
                                                                 });
-//                     var mainVideo = $("video#mainVideo")[0];
-//                     $(".videoloop1").unbind('click').click(function(){
-//                                                            mainVideo.currentTime = 30;
-//                                                            //                                                               mainVideo.load();
-//                                                        //                                                               alert($("video#mainVideo")[0].currentTime);
-//                                                            $.mobile.changePage("index.html", "slideup");
-//                                                            });
-                     //                        var mainVideoTimeListener = self.setInterval(function(){
-                     //                                                                     alert($("video#mainVideo")[0].currentTime);
-                     //                                                                     }, 500);
+                    var mainVideo = $("video#mainVideo")[0];
+
+                    $(".bar_3_1_selected").unbind('click').click(function(){
+                                                                 $("div[class$='_selected']").css('background-image', '');
+                                                                 $(".bar_3_1_selected").css('background-image', 'url(images/bar_3_1_selected.png)');
+                                                                 mainVideo.currentTime = 0;
+                                                                 });
+
+                    $(".bar_3_2_selected").unbind('click').click(function(){
+                                                                 $("div[class$='_selected']").css('background-image', '');
+                                                                 $(".bar_3_2_selected").css('background-image', 'url(images/bar_3_2_selected.png)');
+                                                                 mainVideo.currentTime = 207.5;
+                                                                 });
+
+                    $(".bar_3_3_selected").unbind('click').click(function(){
+                                                                 $("div[class$='_selected']").css('background-image', '');
+                                                                 $(".bar_3_3_selected").css('background-image', 'url(images/bar_3_3_selected.png)');
+                                                                 mainVideo.currentTime = 322;
+                                                                 });
+
+                    $(".bar_2_1_selected").unbind('click').click(function(){
+                                                                 $("div[class$='_selected']").css('background-image', '');
+                                                                 $(".bar_2_1_selected").css('background-image', 'url(images/bar_2_1_selected.png)');
+                                                                 mainVideo.currentTime = 0;
+                                                                 });
+
+                    $(".bar_2_2_selected").unbind('click').click(function(){
+                                                                 $("div[class$='_selected']").css('background-image', '');
+                                                                 $(".bar_2_2_selected").css('background-image', 'url(images/bar_2_2_selected.png)');
+                                                                 navigate_index == 2?mainVideo.currentTime = 156.5:mainVideo.currentTime = 67;
+                                                                 });
+
                     }).live('pageshow',function(event, ui){
+                            if(navigate_index == 1){
+                            $("div[class^='bar_3_']").show();
+                            }else{
+                            $("div[class^='bar_2_']").show();
+                            }
+
                             $(".video_title").css('background-image', 'url(images/video_title_'+navigate_index+'.png)');
-                            
-                            });
+
+                            mainVideo.src = "videos/video_"+navigate_index+".mp4";
+
+                            mainVideoTimeListener = self.setInterval(function(){
+                                                                     showPPTonTime(mainVideo.currentTime);
+                                                                     }, 500);
+                            }).live('pagehide',function(event, ui){
+                                    self.clearInterval(mainVideoTimeListener);
+                                    });
+
+function showPPTonTime(videoSecond){
+    var ppt_index;
+    if(navigate_index == 1){
+        if(videoSecond >= 0 && videoSecond < 36) ppt_index = 1;
+        if(videoSecond >= 36 && videoSecond < 119) ppt_index = 2;
+        if(videoSecond >= 119 && videoSecond < 169) ppt_index = 3;
+        if(videoSecond >= 169 && videoSecond < 207.5) ppt_index = 4;
+        if(videoSecond >= 207.5 && videoSecond < 246) ppt_index = 5;
+        if(videoSecond >= 246 && videoSecond < 287) ppt_index = 6;
+        if(videoSecond >= 287 && videoSecond < 322) ppt_index = 7;
+        if(videoSecond >= 322 && videoSecond < 370) ppt_index = 8;
+        if(videoSecond >= 370) ppt_index = 9;
+
+        if(videoSecond >= 0 && videoSecond < 207.5){
+            if(($(".bar_3_1_selected").css('background-image')).indexOf('images/bar_3_1_selected.png') < 0){
+                $("div[class$='_selected']").css('background-image', '');
+                $(".bar_3_1_selected").css('background-image', 'url(images/bar_3_1_selected.png)');
+            }
+        }else if(videoSecond >= 207.5 && videoSecond < 322){
+            if(($(".bar_3_2_selected").css('background-image')).indexOf('images/bar_3_2_selected.png') < 0){
+                $("div[class$='_selected']").css('background-image', '');
+                $(".bar_3_2_selected").css('background-image', 'url(images/bar_3_2_selected.png)');
+            }
+        }else if(videoSecond >= 322){
+            if(($(".bar_3_3_selected").css('background-image')).indexOf('images/bar_3_3_selected.png') < 0){
+                $("div[class$='_selected']").css('background-image', '');
+                $(".bar_3_3_selected").css('background-image', 'url(images/bar_3_3_selected.png)');
+            }
+        }else{
+
+        }
+
+    }else if(navigate_index == 2){
+        if(videoSecond >= 0 && videoSecond < 32) ppt_index = 1;
+        if(videoSecond >= 32 && videoSecond < 75) ppt_index = 2;
+        if(videoSecond >= 75 && videoSecond < 156.5) ppt_index = 3;
+        if(videoSecond >= 156.5) ppt_index = 4;
+
+        if(videoSecond >= 0 && videoSecond < 156.5){
+            if(($(".bar_2_1_selected").css('background-image')).indexOf('images/bar_2_1_selected.png') < 0){
+                $("div[class$='_selected']").css('background-image', '');
+                $(".bar_2_1_selected").css('background-image', 'url(images/bar_2_1_selected.png)');
+            }
+        }else if(videoSecond >= 156.5){
+            if(($(".bar_2_2_selected").css('background-image')).indexOf('images/bar_2_2_selected.png') < 0){
+                $("div[class$='_selected']").css('background-image', '');
+                $(".bar_2_2_selected").css('background-image', 'url(images/bar_2_2_selected.png)');
+            }
+        }else{
+
+        }
+
+    }else if(navigate_index == 3){
+        if(videoSecond >= 0 && videoSecond < 67) ppt_index = 1;
+        if(videoSecond >= 67) ppt_index = 2;
+
+        if(videoSecond >= 0 && videoSecond < 67){
+            if(($(".bar_2_1_selected").css('background-image')).indexOf('images/bar_2_1_selected.png') < 0){
+                $("div[class$='_selected']").css('background-image', '');
+                $(".bar_2_1_selected").css('background-image', 'url(images/bar_2_1_selected.png)');
+            }
+        }else if(videoSecond >= 67){
+            if(($(".bar_2_2_selected").css('background-image')).indexOf('images/bar_2_2_selected.png') < 0){
+                $("div[class$='_selected']").css('background-image', '');
+                $(".bar_2_2_selected").css('background-image', 'url(images/bar_2_2_selected.png)');
+            }
+        }else{
+
+        }
+
+    }else{
+    
+    }
+    
+    if(($(".ppt").css('background-image')).indexOf('images/ppt_'+navigate_index+'_'+ppt_index+'.png') < 0){
+        $(".ppt").hide().css('background-image', 'url(images/ppt_'+navigate_index+'_'+ppt_index+'.png)').fadeIn();
+    }
+}
 
 $("div#qa").live('pageinit',function(event, ui){
                  $(".homepage_button").unbind('click').click(function(){
