@@ -254,6 +254,41 @@ div {
     background-image: url(../images/video_bar.png);
 }
 
+.video_button {
+    position: absolute;
+    top: 435px;
+    left: 92px;
+    width: 44px;
+    height: 44px;
+}
+
+.video_timer {
+    position: absolute;
+    top: 446px;
+    left: 148px;
+    width: 44px;
+    height: 22px;
+    font-weight:bold;
+    color:#ffffff;
+}
+
+.video_timeflag {
+    position: absolute;
+    top: 448px;
+    left: 203px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/video_timeflag.png);
+}
+
+.doctor_name {
+    position: absolute;
+    top: 68px;
+    left: 78px;
+    width: 213px;
+    height: 19px;
+}
+
 .bar_3_section {
     position: absolute;
     top: 440px;
@@ -426,5 +461,3 @@ div {
     height: 317px;
     display: none;
 }
-
-
