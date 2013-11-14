@@ -60,7 +60,7 @@ div {
     position: absolute;
     left: 453px;
     width: 456px;
-    height: 75px;
+    height: 115px;
 }
 
 .swipeArea {
@@ -245,6 +245,14 @@ div {
     height: 334px;
 }
 
+.video_click_area {
+    position: absolute;
+    top: 97px;
+    left: 85px;
+    width: 835px;
+    height: 334px;
+}
+
 .video_bar {
     position: absolute;
     top: 430px;
@@ -289,68 +297,74 @@ div {
     height: 19px;
 }
 
-.bar_3_section {
+.bar_section_bg {
     position: absolute;
     top: 440px;
     left: 196px;
     width: 607px;
     height: 33px;
-    background-image: url(../images/bar_3_section.png);
-    display: none;
 }
 
-.bar_3_1_selected {
-    position: absolute;
-    top: 447px;
-    left: 206px;
-    width: 193px;
-    height: 20px;
-    display: none;
-}
-
-.bar_3_2_selected {
-    position: absolute;
-    top: 447px;
-    left: 402px;
-    width: 195px;
-    height: 20px;
-    display: none;
-}
-
-.bar_3_3_selected {
-    position: absolute;
-    top: 447px;
-    left: 600px;
-    width: 193px;
-    height: 20px;
-    display: none;
-}
-
-.bar_2_section {
+.bar_selected_1_1 {
     position: absolute;
     top: 440px;
-    left: 196px;
-    width: 607px;
-    height: 33px;
-    background-image: url(../images/bar_2_section.png);
-    display: none;
-}
-
-.bar_2_1_selected {
-    position: absolute;
-    top: 447px;
     left: 205px;
-    width: 289px;
-    height: 20px;
+    width: 295px;
+    height: 33px;
     display: none;
 }
 
-.bar_2_2_selected {
+.bar_selected_1_2 {
     position: absolute;
-    top: 447px;
-    left: 499px;
-    width: 292px;
-    height: 20px;
+    top: 440px;
+    left: 502px;
+    width: 165px;
+    height: 33px;
+    display: none;
+}
+
+.bar_selected_1_3 {
+    position: absolute;
+    top: 440px;
+    left: 666px;
+    width: 131px;
+    height: 33px;
+    display: none;
+}
+
+.bar_selected_2_1 {
+    position: absolute;
+    top: 440px;
+    left: 205px;
+    width: 448px;
+    height: 33px;
+    display: none;
+}
+
+.bar_selected_2_2 {
+    position: absolute;
+    top: 440px;
+    left: 651px;
+    width: 145px;
+    height: 33px;
+    display: none;
+}
+
+.bar_selected_3_1 {
+    position: absolute;
+    top: 440px;
+    left: 205px;
+    width: 378px;
+    height: 33px;
+    display: none;
+}
+
+.bar_selected_3_2 {
+    position: absolute;
+    top: 440px;
+    left: 583px;
+    width: 213px;
+    height: 33px;
     display: none;
 }
 
@@ -457,7 +471,17 @@ div {
 
 .answer {
     position: absolute;
-    width: 518px;
-    height: 317px;
+    top: 190px;
+    left: 0px;
+    width: 1024px;
+    height: 472px;
     display: none;
+}
+
+.cancel_answer {
+    position: absolute;
+    top: 661px;
+    left: 0px;
+    width: 1024px;
+    height: 107px;
 }
