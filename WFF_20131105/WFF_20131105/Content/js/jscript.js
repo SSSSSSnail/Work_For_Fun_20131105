@@ -322,6 +322,8 @@ $("div#video").live('pageinit',function (event, ui) {
 
         }
 
+        $(".video_timeflag").show();
+
         $(".video_title").css('background-image', 'url(images/video_title_' + navigate_index + '.png)');
 
         mainVideo.src = "videos/video_" + navigate_index + ".mp4";
@@ -443,8 +445,10 @@ function showPPTonTime(thisVideo) {
     var leftSecondsText = leftSeconds < 10 ? '0' + leftSeconds : leftSeconds + '';
     $(".video_timer").text(currentminute + ':' + leftSecondsText);
 
+    if(videoSecond > 0){
     var leftpx = Math.round(203 + (777 - 203) * videoSecond / thisVideo.duration);
-    $(".video_timeflag").css({left: leftpx + 'px'});
+        $(".video_timeflag").css({left: leftpx + 'px'});
+    }
 }
 
 $("div#qa").live('pageinit',function (event, ui) {
