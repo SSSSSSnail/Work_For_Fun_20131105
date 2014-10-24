@@ -328,7 +328,7 @@ $("div#video").live('pageinit',function (event, ui) {
 
         mainVideo.src = "videos/video_" + navigate_index + ".mp4";
 
-        mainVideoTimeListener = self.setInterval(function () {
+        mainVideoTimeListener = window.setInterval(function () {
             showPPTonTime(mainVideo);
         }, 500);
     }).live('pagehide', function (event, ui) {
